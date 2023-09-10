@@ -1,0 +1,11 @@
+package com.system.exception;
+
+public class NoSuchCustomerFoundException extends Exception {
+	public NoSuchCustomerFoundException(String msg) {
+		super(msg);
+	}
+	
+	public NoSuchCustomerFoundException(String msg, Throwable cause) {
+		super(msg,cause);
+}
+}

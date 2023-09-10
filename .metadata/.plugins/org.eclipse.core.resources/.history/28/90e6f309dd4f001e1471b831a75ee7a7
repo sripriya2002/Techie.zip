@@ -1,0 +1,12 @@
+package com.system.dao;
+
+import com.system.exception.EmployeeNotFoundException;
+import com.system.exception.NoSuchCustomerFoundException;
+import com.system.model.Customer;
+import com.system.model.Employee;
+
+public interface LoginCustomerEmployeeDao {
+	public Customer customerLogin(int id, String Password ) throws NoSuchCustomerFoundException;
+	public Employee employeeLogin(int id, String Password) throws EmployeeNotFoundException;
+
+}

@@ -1,0 +1,24 @@
+package com.system.dao;
+
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+
+import com.system.model.Customer;
+
+public class LoginCustomerEmployeeDaoImpl implements LoginCustomerEmployeeDao {
+     private static PreparedStatement loginId;
+	@Override
+	public boolean customerLogin(int id, String Password ) {
+		loginId.setInt(1, id);
+		loginId.setString(2, Password);
+		ResultSet rs = loginId.executeQuery();
+		if(rs.next())
+			return new Customer(rs.getInt(1),rs.getString(2),rs.getdouble(4),rs.getString(5),rs.getString(6), rs.getString(7), rs.getDouble(8), rs.getInt(9));
+	}
+
+	@Override
+	public boolean employeeLogin(int id, String Password ) {
+		return false;
+	}
+
+}

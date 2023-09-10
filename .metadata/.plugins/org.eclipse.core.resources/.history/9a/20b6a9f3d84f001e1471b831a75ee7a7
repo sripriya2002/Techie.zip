@@ -1,0 +1,7 @@
+package com.system.dao;
+
+public interface LoginCustomerEmployeeDao {
+	public boolean customerLogin(int id, String Password );
+	public boolean employeeLogin(int id, String Password);
+
+}

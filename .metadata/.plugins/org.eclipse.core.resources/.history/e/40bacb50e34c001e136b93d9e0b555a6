@@ -1,0 +1,15 @@
+package com.system.dao;
+
+public class LoginCustomerEmployeeDaoImpl implements LoginCustomerEmployeeDao {
+
+	@Override
+	public boolean customerLogin(int id, String Password ) {
+		return false;
+	}
+
+	@Override
+	public boolean employeeLogin(int id, String Password ) {
+		return false;
+	}
+
+}
