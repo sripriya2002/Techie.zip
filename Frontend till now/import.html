@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JSON/XML File Upload</title>
+    <link rel="stylesheet" href="impstyles.css">
+</head>
+<style>
+    body {
+        background-image: url('data1.jpg');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        }
+</style>
+<body>
+    
+    <div class="container">
+        <h1>Upload JSON/XML File</h1>
+       
+    
+        <form action="/status.html">
+            <input type="file" id="fileInput" name="filename" accept=".json, .xml">
+            <a href="status.html"><input type="submit"></a>
+          </form>
+        
+        <!-- <div id="status">
+            <p>Status: <span id="statusText">-</span></p>
+            <p>Imported: <span id="importedCount">0</span></p>
+            <p>Not Imported: <span id="notImportedCount">0</span></p>
+        </div> -->
+    </div>
+    
+    <script src="imp.js"></script>
+</body>
+</html>

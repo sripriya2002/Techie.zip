@@ -1,0 +1,50 @@
+/* Style for the form container */
+.form-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border: 1px solid #ccc; /* Add a border */
+    padding: 20px; /* Add some padding to space the form from the border */
+    background-color: #141414; /* Add a background color */
+    border-radius: 5px; /* Add rounded corners to the form */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); 
+}
+
+/* Style for each form column */
+.form-column {
+    flex: 1;
+    padding: 10px;
+    border: #181616;
+    border: solid;
+}
+
+/* Style for labels */
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+
+/* Style for small input boxes */
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="date"],
+textarea {
+    width: 70%; /* Adjust the width as needed */
+    padding: 5px;
+    margin-bottom: 10px;
+    border: 5px solid #181616;
+    border-radius: 10px;
+}
+
+/* Style for the submit button */
+input[type="submit"] {
+    width: 100%; /* Make the button span the full width of its container */
+    padding: 10px;
+    background-color: #007BFF; /* Change the background color */
+    color: #fff; /* Change the text color */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
