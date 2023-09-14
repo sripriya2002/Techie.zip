@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Customer Information Form</title>
+<!-- <link rel="stylesheet" type="text/css" href="styles.css"> Link to the external CSS file -->
+
+    <style>
+        
+        body {
+        background-image: url('image3.avif');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        
+        
+        }
+        /* Center the form on the page */
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        /* Style for the form container */
+        .form-container {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+
+        /* Style for each form column */
+        .form-column {
+            flex: 1;
+            padding: 10px;
+        }
+
+        /* Style for labels */
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        /* Style for small input boxes */
+        input[type="text"],
+        input[type="email"],
+        input[type="tel"],
+        input[type="date"],
+        textarea {
+            width: 50%; /* Adjust the width as needed */
+            padding: 5px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+        }
+
+        /* Style for the submit button */
+        input[type="submit"] {
+            width: 100%; /* Make the button span the full width of its container */
+            padding: 10px;
+            background-color: #007BFF; /* Change the background color */
+            color: #fff; /* Change the text color */
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        
+    </style>
+</head>
+<body>
+    <form action="HomeLogin.html">
+        
+    </form>
+    <h1>New Quote Form</h1>
+    <form action="submit.php" method="POST">
+        <div class="form-container">
+            <div class="form-column">
+                <label for="customerID">Customer ID:</label>
+                <input type="text" id="customerID" name="customerID" required pattern="[0-9]+" title="Customer ID must contain only digits.">
+                
+                <label for="customerName">Customer Name:</label>
+                <input type="text" id="customerName" name="customerName" required pattern="[A-Za-z]+" title="Customer Name must contain only letters.">
+                
+                <label for="customerGST">Customer GST No:</label>
+                <input type="text" id="customerGST" name="customerGST" required pattern="[0-9]+" title="Customer GST must contain only digits.">
+                
+                <label for="customerEmail">Customer Email:</label>
+                <input type="email" id="customerEmail" name="customerEmail" required>
+            </div>
+            <div class="form-column">
+                <label for="shippingAddress">Shipping Address:</label>
+                <textarea id="shippingAddress" name="shippingAddress" rows="4" required></textarea>
+                
+                <label for="customerPincode">Customer Pincode:</label>
+                <input type="text" id="customerPincode" name="customerPincode" required pattern="[0-9]+" title="Customer Pincode must contain only digits.">
+                
+                <label for="customerPhoneNumber">Customer Phone Number:</label>
+                <input type="tel" id="customerPhoneNumber" name="customerPhoneNumber" required pattern="[0-9]+" title="Customer Phone Number must contain only digits.">
+                
+                <label for="orderDate">Order Date:</label>
+                <input type="date" id="orderDate" name="orderDate" required>
+            </div>
+        </div>
+        <div class="group">
+            <input type="submit" class="button" value="Submit" onclick="newquote()">
+        </div>
+        <div>
+            <br>
+        </div>
+        
+            <form action="HomeLogin.html">
+                <div>
+                    <input type="submit" class="button0" Value="Logout"></div>
+            </form>
+        
+    </form>
+
+    
+    
+    <script src="newquote.js"></script>
+
+</body>
+</html>
