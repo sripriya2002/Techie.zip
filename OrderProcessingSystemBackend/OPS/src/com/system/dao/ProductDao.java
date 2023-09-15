@@ -1,0 +1,13 @@
+package com.system.dao;
+
+import java.sql.SQLException;
+import java.util.List;
+import java.util.Set;
+
+import com.system.model.Product;
+
+public interface ProductDao {
+	public List<Product> getAllProducts()throws SQLException;
+	public boolean addProducts(Product products)throws SQLException;
+
+}
